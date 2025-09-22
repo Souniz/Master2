@@ -2,25 +2,23 @@ import argparse
 import random
 import torch
 import torch.nn as nn
-from models.CNN_tp1 import CNN
-from utils.data_loder import train_set,test_data
-from train.train import train
-from evaluate.test import test
+from ..models.CNN_tp1 import CNN
+from ..utils.data_loder import train_set,test_data
+from ..train.train import train
+from ..evaluate.test import test
 import wandb
-import numpy as np
 
 wandb.login(key='731be6e0f444c6f77a3bb899d5cd29f3c7959a49')
-wandb.init()
 
 def fix_randomness(SEED):
     random.seed(SEED)
-    np.random.seed(SEED)
+    #np.random.seed(SEED)
     torch.manual_seed(SEED)
     torch.cuda.manual_seed(SEED)
     torch.backends.cudnn.deterministic = True
     torch.backends.cudnn.benchmark = False
 
-fix_randomness(0)
+
 def run(args):
     model = CNN()
     optimizer = torch.optim.Adam(model.parameters(), lr=args.learning_rate)
@@ -34,8 +32,6 @@ def run(args):
     for epoch in range(1, 11):
         train_loss_cur, train_acc_cur = train(model, train_loader, optimizer, criterion, epoch)
         test_loss_cur, test_acc_cur = test(model, test_loader, criterion)
-        wandb.log({"train-loss": train_loss_cur, "train-accuracy": train_acc_cur})
-        wandb.log({"test-loss": test_loss_cur, "test-accuracy": test_acc_cur})
         train_acc.append(train_acc_cur)
         test_acc.append(test_acc_cur)
         train_loss.append(train_loss_cur)

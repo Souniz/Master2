@@ -1,0 +1,50 @@
+_wandb:
+    value:
+        cli_version: 0.22.0
+        e:
+            uedlmnksdikla3y63200ts5hp6qz6abu:
+                codePath: DLA/TP_Intro_DLA/main.py
+                cpu_count: 8
+                cpu_count_logical: 16
+                cudaVersion: "13.0"
+                disk:
+                    /:
+                        total: "39052693504"
+                        used: "18484682752"
+                email: sounaniang10@gmail.com
+                executable: /home/souna/Bureau/Master2/DLA/tp-uv/.venv/bin/python3
+                git:
+                    commit: 8b3f4a2f7011f80d859a5b86244f0b00693a8587
+                    remote: git@github.com:Souniz/Master2.git
+                gpu: NVIDIA GeForce RTX 4060 Laptop GPU
+                gpu_count: 1
+                gpu_nvidia:
+                    - architecture: Ada
+                      cudaCores: 3072
+                      memoryTotal: "8585740288"
+                      name: NVIDIA GeForce RTX 4060 Laptop GPU
+                      uuid: GPU-407a055d-b421-0224-6e90-61f81cba4953
+                host: souna-LOQ-15ARP9
+                memory:
+                    total: "24865427456"
+                os: Linux-6.14.0-29-generic-x86_64-with-glibc2.39
+                program: /home/souna/Bureau/Master2/DLA/tp-uv/../TP_Intro_DLA/main.py
+                python: CPython 3.12.3
+                root: /home/souna/Bureau/Master2/DLA/tp-uv
+                startedAt: "2025-09-22T13:01:14.459093Z"
+                writerId: uedlmnksdikla3y63200ts5hp6qz6abu
+        m: []
+        python_version: 3.12.3
+        t:
+            "1":
+                - 1
+                - 41
+                - 100
+            "2":
+                - 1
+                - 41
+                - 100
+            "4": 3.12.3
+            "5": 0.22.0
+            "12": 0.22.0
+            "13": linux-x86_64

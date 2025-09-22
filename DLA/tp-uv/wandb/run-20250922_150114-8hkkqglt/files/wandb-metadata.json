@@ -1,0 +1,39 @@
+{
+  "os":  "Linux-6.14.0-29-generic-x86_64-with-glibc2.39",
+  "python":  "CPython 3.12.3",
+  "startedAt":  "2025-09-22T13:01:14.459093Z",
+  "program":  "/home/souna/Bureau/Master2/DLA/tp-uv/../TP_Intro_DLA/main.py",
+  "codePath":  "DLA/TP_Intro_DLA/main.py",
+  "git":  {
+    "remote":  "git@github.com:Souniz/Master2.git",
+    "commit":  "8b3f4a2f7011f80d859a5b86244f0b00693a8587"
+  },
+  "email":  "sounaniang10@gmail.com",
+  "root":  "/home/souna/Bureau/Master2/DLA/tp-uv",
+  "host":  "souna-LOQ-15ARP9",
+  "executable":  "/home/souna/Bureau/Master2/DLA/tp-uv/.venv/bin/python3",
+  "cpu_count":  8,
+  "cpu_count_logical":  16,
+  "gpu":  "NVIDIA GeForce RTX 4060 Laptop GPU",
+  "gpu_count":  1,
+  "disk":  {
+    "/":  {
+      "total":  "39052693504",
+      "used":  "18484682752"
+    }
+  },
+  "memory":  {
+    "total":  "24865427456"
+  },
+  "gpu_nvidia":  [
+    {
+      "name":  "NVIDIA GeForce RTX 4060 Laptop GPU",
+      "memoryTotal":  "8585740288",
+      "cudaCores":  3072,
+      "architecture":  "Ada",
+      "uuid":  "GPU-407a055d-b421-0224-6e90-61f81cba4953"
+    }
+  ],
+  "cudaVersion":  "13.0",
+  "writerId":  "uedlmnksdikla3y63200ts5hp6qz6abu"
+}

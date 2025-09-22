@@ -1,0 +1,31 @@
+==================================================
+batch_size = 64
+learning_rate = 0.001
+==================================================
+Epoch 1 - loss: 0.23
+Accuracy: 0.93
+Test set: Average loss: 0.06, Accuracy: 0.98
+Epoch 2 - loss: 0.06
+Accuracy: 0.98
+Test set: Average loss: 0.05, Accuracy: 0.98
+Epoch 3 - loss: 0.04
+Accuracy: 0.99
+Test set: Average loss: 0.04, Accuracy: 0.99
+Epoch 4 - loss: 0.03
+Accuracy: 0.99
+Test set: Average loss: 0.03, Accuracy: 0.99
+Epoch 5 - loss: 0.03
+Accuracy: 0.99
+Test set: Average loss: 0.04, Accuracy: 0.99
+Epoch 6 - loss: 0.02
+Accuracy: 0.99
+Test set: Average loss: 0.03, Accuracy: 0.99
+Epoch 7 - loss: 0.02
+Accuracy: 1.00
+Test set: Average loss: 0.03, Accuracy: 0.99
+Epoch 8 - loss: 0.01
+Accuracy: 1.00
+Test set: Average loss: 0.03, Accuracy: 0.99
+Epoch 9 - loss: 0.01
+Accuracy: 1.00
+Test set: Average loss: 0.04, Accuracy: 0.99
