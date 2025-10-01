@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<artists>
+<artist id="1">
+    <last_name>Cronenberg</last_name>
+    <first_name>David</first_name>
+    <birth_date>1943</birth_date>
+</artist>
+<artist id="2">
+    <last_name>Mortensen</last_name>
+    <first_name>Vigo</first_name>
+    <birth_date>1958</birth_date>
+</artist>
+<artist id="3">
+    <last_name>Bello</last_name>
+    <first_name>Maria</first_name>
+    <birth_date>1967</birth_date>
+</artist>
+<artist id="4">
+    <last_name>Harris</last_name>
+    <first_name>Ed</first_name>
+    <birth_date>1950</birth_date>
+</artist>
+<artist id="5">
+    <last_name>Hurt</last_name>
+    <first_name>William</first_name>
+    <birth_date>1950</birth_date>
+</artist>
+<artist id="6">
+    <last_name>Mann</last_name>
+    <first_name>Michael</first_name>
+    <birth_date>1943</birth_date>
+</artist>
+<artist id="7">
+    <last_name>Pacino</last_name>
+    <first_name>Al</first_name>
+    <birth_date>1940</birth_date>
+</artist>
+<artist id="8">
+    <last_name>De Niro</last_name>
+    <first_name>Robert</first_name>
+    <birth_date>1943</birth_date>
+</artist>
+<artist id="9">
+    <last_name>Kilmer</last_name>
+    <first_name>Val</first_name>
+    <birth_date>1959</birth_date>
+</artist>
+<artist id="10">
+    <last_name>Voight</last_name>
+    <first_name>Jon</first_name>
+    <birth_date>1938</birth_date>
+</artist>
+<artist id="11">
+    <last_name>Eastwood</last_name>
+    <first_name>Clint</first_name>
+    <birth_date>1930</birth_date>
+</artist>
+<artist id="12">
+    <last_name>Hackman</last_name>
+    <first_name>Gene</first_name>
+    <birth_date>1930</birth_date>
+</artist>
+<artist id="13">
+    <last_name>Freeman</last_name>
+    <first_name>Morgan</first_name>
+    <birth_date>1937</birth_date>
+</artist>
+<artist id="14">
+    <last_name>Allen</last_name>
+    <first_name>Woody</first_name>
+    <birth_date>1935</birth_date>
+</artist>
+<artist id="15">
+    <last_name>Rhys Meyers</last_name>
+    <first_name>Jonathan</first_name>
+    <birth_date>1977</birth_date>
+</artist>
+<artist id="16">
+    <last_name>Johansson</last_name>
+    <first_name>Scarlett </first_name>
+    <birth_date>1984</birth_date>
+</artist>
+<artist id="17">
+    <last_name>Coppola</last_name>
+    <first_name>Sofia</first_name>
+    <birth_date>1971</birth_date>
+</artist>
+<artist id="18">
+    <last_name>Murray</last_name>
+    <first_name>Bill</first_name>
+    <birth_date>1950</birth_date>
+</artist>
+<artist id="19">
+    <last_name>Dunst</last_name>
+    <first_name>Kirsten</first_name>
+    <birth_date>1982</birth_date>
+</artist>
+<artist id="20">
+    <last_name>Schwartzman</last_name>
+    <first_name>Jason </first_name>
+    <birth_date>1980</birth_date>
+</artist>
+<artist id="21">
+    <last_name>Raimi</last_name>
+    <first_name>Sam</first_name>
+    <birth_date>1959</birth_date>
+</artist>
+<artist id="22">
+    <last_name>Maguire</last_name>
+    <first_name>Tobey</first_name>
+    <birth_date>1975</birth_date>
+</artist>
+<artist id="23">
+    <last_name>Dafoe</last_name>
+    <first_name>Willem</first_name>
+    <birth_date>1955</birth_date>
+</artist>
+</artists>
