@@ -77,8 +77,8 @@ def value_iteration(grid_eval,gamma=1,teta=0.02):
                 q_values.append(r + gamma * V[s_prim])
             V[s] = max(q_values)
             delta = max(delta, abs(v-V[s]))
-            if delta < teta:
-                break
+        if delta < teta:
+            break
     return V
 
 
