@@ -32,7 +32,7 @@ class Grid_Solv:
         new_state = np.ravel_multi_index((i,j), (grid_size, grid_size))
         return new_state
     
-    def is_done(state, terminal_states):
+    def is_done(self,state, terminal_states):
         return state in terminal_states
    # Transition is coded as a dictionary of dictionary 
     def transition(self):
@@ -52,6 +52,7 @@ class Grid_Solv:
                 for action in self.actions:
                     next_s = self.next_state(self.GRID_SIZE, s, action)
                     P[s][action] = (next_s,reward,self.is_done(next_s, self.TERMINAL_STATES))
+        return P
         
 
 
