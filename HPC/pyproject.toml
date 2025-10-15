@@ -8,7 +8,10 @@ dependencies = [
     "ipykernel>=6.30.1",
     "line-profiler>=5.0.0",
     "matplotlib>=3.10.6",
+    "mpi>=1.0.0",
+    "mpi4py>=4.1.1",
     "numpy>=2.3.3",
+    "openmpi>=5.0.8",
     "pstats-view>=0.1",
     "pyprofilers>=0.1.3",
 ]

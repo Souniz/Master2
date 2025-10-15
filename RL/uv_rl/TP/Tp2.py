@@ -23,7 +23,7 @@ def policy_evaluation(grid_eval,gamma=1,teta=0.02):
 
 def policy_improvement(grid_eval,gamma=1,teta=0.02):
     p=grid_eval.transition()
-    V=policy_evaluation(grid_eval,gamma=1,teta=0.02)
+    V=policy_evaluation(grid_eval,gamma,teta)
     pi_imp={}
     for s in grid_eval.states:
          q={}
@@ -39,6 +39,7 @@ def policy_iteration(grid_eval,gamma=1,teta=0.02):
 
     policy_eval=policy_evaluation(grid_eval)
     policy_imp=policy_improvement(grid_eval)
+    p=grid_eval.transition()
     pi={}
     while True:
         policy_stable=True
@@ -46,7 +47,8 @@ def policy_iteration(grid_eval,gamma=1,teta=0.02):
             q={}
             old_action=max(policy_imp[s],key=policy_imp[s].get)
             for a in grid_eval.actions :
-                s_prim,r,done=grid_eval.transition()[s][a]
+                s_prim,r,done=p[s][a]
+                
                 q[a]=r+gamma*policy_eval[s_prim]
             best_a= max(q, key=q.get)
             pi[s]=best_a
@@ -85,4 +87,5 @@ def value_iteration(grid_eval,gamma=1,teta=0.02):
 if __name__ == "__main__":
     grid_eval= Grid_Solv(4)
     s=value_iteration(grid_eval)
+
     print(s)

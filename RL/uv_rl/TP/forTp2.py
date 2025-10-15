@@ -18,7 +18,7 @@ class Grid_Solv:
         # The unifom policy 
         self.uniform_policy = {s : { a : 
                                     1/len(self.actions) for a in self.actions } for s in self.states}
-
+        
     def next_state(self,grid_size, state, action):
         i,j = np.unravel_index(state, (grid_size, grid_size))
         if action == 'UP':
@@ -31,7 +31,7 @@ class Grid_Solv:
             j = np.maximum(0,j-1)    
         new_state = np.ravel_multi_index((i,j), (grid_size, grid_size))
         return new_state
-    
+
     def is_done(self,state, terminal_states):
         return state in terminal_states
    # Transition is coded as a dictionary of dictionary 
