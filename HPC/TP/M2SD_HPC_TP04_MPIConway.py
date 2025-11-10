@@ -84,7 +84,7 @@ def create_local_grid(grid):
     local_grid=grid[coord:coord+nlocal]
     local_grid=enlarge_grid(local_grid)
 
-    return local_grid,coord
+    return local_grid
 
 
 def read_grid(file):
@@ -102,17 +102,41 @@ def conway(grid, n):
     the intermediate statistics (number of alive cells and percents)
     """
     # Enlarge the grid
-    egrid = enlarge_grid(grid)
+    #egrid = enlarge_grid(grid)
+    comm=MPI.COMM_WORLD
+    rank=comm.Get_rank()
+    size=comm.Get_size()
+    
     for i in range(n):
-        # statstistic on the grid
+
+        egrid=create_local_grid(grid)
+
+        #statstistic on the grid
         #alive = np.sum(egrid)
-        #print(f'alive cells: {alive}: {alive / grid.size * 100:2.2f}%')
-        # Apply life_step
+        #print(f'alive cells: {alive}: {alive / egrid.size * 100:2.2f}%  ---->process {rank}')
+
+        #Apply life_step
         egrid = life_step(egrid)
-    # return the standard grid without     
-    return egrid[1:-1,1:-1]
+        
+        #Exchange
+        if rank < size-1:
+            comm.send(egrid[-2],dest=rank+1)
+        if rank > 0: 
+            row=comm.recv(source=rank-1)
+            egrid[1]=row
+
+    # return the standard grid without  
+    recv = comm.gather(egrid[1:-1],root=0)
+    if rank == 0:
+        full_grid = np.vstack(recv)
+        return full_grid
+
 if __name__ == '__main__':
-    grid=np.zeros((10,10),dtype=ctype)
+    grid=init_grid((10,10))
+    print('******************')
+    print(grid)
+    print('******************')
     #grid = read_grid('jdv_1000.grid')
-    #res = conway(grid, 5)
-    print(create_local_grid(grid))
+    res = conway(grid, 2)
+    print(res)
+    
